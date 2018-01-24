@@ -1,0 +1,71 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida", sans-serif;
+    margin: 5% 5% 5% 5%;
+}
+
+h1 {
+    font-weight: 900;   
+    margin-bottom: 0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width:auto;
+}
+
+label {
+    font-weight: 900;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #26A;
+    color: #fff;
+    border: none;
+    margin: 2.5%;
+    padding: 5px 5em;
+    height: 35px;
+
+    display: inline-block;
+}
+
+.input {
+    border-radius: 5px;
+    border-color: #BBB;
+    border-width: thin;
+    padding: 10px;
+    width: 99%;
+    border-style:solid;
+}
+
+#results-actual {
+    width: 99%;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: #BBB;
+    background-color: #DDD;
+    padding: 15px 15px;
+    width: 90%;
+    margin: 2.5%;
+}
+
+.form-element {
+    display: inline-block;
+    width: 43.25%;
+    margin: 1% 2.5%;
+}
+
+#form-second {
+    display: inline-block;
+    margin: 1% 2.5%;
+    width:70%;
+}
+
+#planet-selection {
+    height: 34px;
+    display: inline-block;
+    padding: 10px;
+}

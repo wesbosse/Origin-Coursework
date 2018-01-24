@@ -1,0 +1,22 @@
+<div ng-controller="transCtrl as vm">
+    <h1 class="text-center">Translation Station</h1>
+    <textarea type="text" ng-model="vm.speechIn" class="form-control"></textarea>
+    <br />
+    <div class="wrapper">
+        <label>Desired Output Language:</label>
+        <select ng-model="vm.lang">
+        	<option value="en">English</option>
+        	<option value="es">Spanish</option>
+        	<option value="fr">French</option>
+        	<option value="zh-CN">Chinese</option>
+        	<option value="de">German</option>
+        </select>
+        <br />
+        <button type="button" class="btn btn-primary btn-large" ng-click="vm.translator()">Translate</button>
+    </div>
+    <hr>
+    <a ui-sref="main.input" class="col-md-6 text-center">Input Language Log</a>
+    <a ui-sref="main.translated" class="col-md-6 text-center">Output Language Log</a>
+    <br />
+    <div ui-view></div>
+</div>

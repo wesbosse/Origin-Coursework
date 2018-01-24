@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+</head>
+
+<body>
+
+    <h1>Mortgage Calculator</h1>
+    <hr>
+    <br />
+    <form>
+        <p class="form-element">
+            <label>Loan Balance</label>
+            <input type="number" class="input" id="balance">
+        </p>
+        <p class="form-element">
+            <label>Interest Rate (%)</label>
+            <input type="number" class = "input" id = "interest-rate">
+        </p>
+        <p class="form-element">    
+            <label>Loan Term (years)</label>
+            <input type="number" class="input" id="term">
+        </p>
+        <p class="form-element">    
+            <label>Period</label>
+            <select class="input" id="period">
+                <option value = "12" class="option">Monthly</option>
+                <option value = "24" class="option">Bi-Monthly</option>
+            </select>
+        </p>
+        <button id="calculate">Calculate</button>
+    </form>
+    
+    <p id="results-actual">
+    <br>
+    </p>
+
+   
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<table class="table table-hover table-striped">
+    <tbody>
+        <tr ng-repeat="translation in vm.translationList">
+            <td ng-click="vm.speak(translation, vm.voice)">{{translation}}
+            </td>
+        </tr>
+    </tbody>
+</table>

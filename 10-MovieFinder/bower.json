@@ -1,0 +1,13 @@
+{
+  "name": "movie_finder",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "andreedirm <andre.edirm@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular-ui-router": "^0.2.18"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+</head>
+
+<body>
+
+    <h1>Astro Calculator</h1>
+    <hr>
+
+    <form>
+        <p class="form-element">
+            <label>Your Weight (lbs)</label>
+                <br>
+            <input class="input" id="user-weight">
+        </p>
+        <p class="form-element">
+            <label>Enter Your Age (MM/DD/YYYY):</label>
+                <br>
+            <input type="text" class = "input" id = "user-birth">
+        </p>
+        <p id="form-second">    
+            <label>Select Planet:</label>
+                <br>
+            <select class="input" id="planet-selection">
+            </select>
+        </p>
+
+        <button id="calculate">Calculate</button>
+    </form>
+    
+    <p id="results-actual">
+    <br>
+    </p>
+
+   
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    
+</body>
+
+</html>

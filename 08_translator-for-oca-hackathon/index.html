@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mashable API Test</title>
+    <!-- bower:css -->
+    <!-- endbower -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/style.css">
+    <!-- endinject -->
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+</head>
+
+<body>
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <div ui-view></div>
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/interceptor.js"></script>
+    <script src="/app/speechControl.js"></script>
+    <script src="/app/textTranslate.controller.js"></script>
+    <script src="/app/translate.service.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

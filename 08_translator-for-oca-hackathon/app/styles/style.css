@@ -1,0 +1,29 @@
+body {
+	margin: 5%;
+}
+
+.form-control {
+	width: 70%;
+	margin: auto;
+}
+
+.btn {
+	align-self: center;
+	padding: 10px 25px;
+}
+
+tr:nth-child(2n) {
+	text-align:right;
+}
+
+td {
+	font-size: 2em;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+a {
+	font-size: 1.4em;
+}

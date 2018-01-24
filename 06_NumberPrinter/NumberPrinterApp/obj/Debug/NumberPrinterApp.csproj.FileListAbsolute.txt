@@ -1,0 +1,6 @@
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\bin\Debug\NumberPrinterApp.exe.config
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\bin\Debug\NumberPrinterApp.exe
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\bin\Debug\NumberPrinterApp.pdb
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\obj\Debug\NumberPrinterApp.csprojResolveAssemblyReference.cache
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\obj\Debug\NumberPrinterApp.exe
+Y:\Desktop\code\github\OCA-assignments\cSharp\NumberPrinterApp\NumberPrinterApp\obj\Debug\NumberPrinterApp.pdb

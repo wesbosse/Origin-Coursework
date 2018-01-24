@@ -1,0 +1,19 @@
+.warning 
+{
+	background-color: #F00;
+}
+
+.danger 
+{
+	background-color: #FF0;
+}
+
+.info 
+{
+	background-color: #0F0;
+}
+
+p
+{
+	margin: 5px;
+}

@@ -1,0 +1,8 @@
+<table class="table table-hover table-striped">
+    <tbody>
+        <tr ng-repeat="message in vm.messageList">
+            <td ng-click="vm.speak(message, vm.voice)">{{message}}
+            </td>
+        </tr>
+    </tbody>
+</table>

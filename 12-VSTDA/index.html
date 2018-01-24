@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" ng-app="vsdtapp">
+
+<head>
+    <meta charset="utf-8">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/vstda.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/vsdta.js"></script>
+    <script src="app/vsdtafactory.js"></script>
+    <script src="app/vsdtacontroller.js"></script>
+</head>
+
+<body ng-controller="VSTDAController as vm">
+    <div class="container">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add Task</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="task">Task:</label>
+                        <input class="form-control" ng-model="vm.text" name="task">
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Priority:</label>
+                        <select class="form-control" ng-model="vm.priority" name="sel1" ng-options="pl.value as pl.title for pl in vm.priorityList">
+                        </select>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-primary" ng-click=vm.addItem()>Add Task</button>
+                    <button type="button" class="btn btn-primary" ng-click=vm.updateItem()>Update Task</button>
+                    <button type="button" class="btn btn-primary" ng-click=vm.deleteItem()>Delete Task</button>
+                    <p>To add a task, enter a description and select a Priority, then press 'Add'</p>
+                    <p> To Update or Delete, double click to edit and save changes with the Update or Delete buttons.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" ng-click="vm.order('priority')">Order by highest priority</button>
+                        <span class="sortorder" ng-show="vm.text === 'priority'" ng-class="{reverse:reverse}"></span>
+                        <button type="button" class="btn btn-primary" ng-click="vm.order('-priority')">Order by lowest priority</button>
+                        <span class="sortorder" ng-show="vm.text === '-priority'" ng-class="{reverse:reverse}"></span>
+                        <button type="button" class="btn btn-primary" ng-click="vm.order('text')">Order alphabetically</button>
+                        <span class="sortorder" ng-show="vm.text === 'text'" ng-class="{reverse:reverse}"></span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table">
+                        <tbody>
+                            <tr ng-repeat="td in vm.toDoArray | orderBy:vm.text:vm.reverse" ng-class="vm.getClassInfo(td.priority)">
+                                <td ng-dblclick=vm.selectItemByDblClk(td)>{{td.text}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

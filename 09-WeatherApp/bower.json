@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "authors": [
+    "wesley and andre"
+  ],
+  "description": "weather app using an api",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "toastr": "^2.1.2",
+    "moment": "^2.13.0",
+    "gulp": "^3.9.1"
+  },
+  "private": true
+}

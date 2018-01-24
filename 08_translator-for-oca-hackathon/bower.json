@@ -1,0 +1,22 @@
+{
+  "name": "translator",
+  "authors": [
+    "Toby <curti024@csusm.edu>"
+  ],
+  "description": "translation app",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "supchix.com",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.2.18"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
